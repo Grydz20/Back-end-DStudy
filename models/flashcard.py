@@ -12,3 +12,4 @@ class Flashcard(db.Model):
     alt_c = db.Column(db.String(255), nullable=False)
     alt_d = db.Column(db.String(255), nullable=False)
     correta = db.Column(db.String(1), nullable=False)
+    dificuldade = db.Column(db.Integer, nullable=False, default=1)

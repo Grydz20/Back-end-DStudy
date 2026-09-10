@@ -1,72 +1,33 @@
--- Inserir matérias
-INSERT INTO materias (nome, descricao) VALUES
-('Modelagem e Desenvolvimento de Banco de Dados', 'Ensina a projetar, criar e gerenciar bancos de dados de forma eficiente e segura.'),
-('Inteligência Artificial', 'Introduz conceitos de IA, aprendizado de máquina e aplicações em sistemas inteligentes.'),
-('Programação Back-End', 'Desenvolve a lógica do servidor, APIs e integração com bancos de dados.'),
-('Programação Front-End', 'Cria interfaces web interativas, responsivas e focadas na experiência do usuário.'),
-('Programação Mobile', 'Ensina o desenvolvimento de aplicativos para dispositivos móveis.'),
-('Projeto Multidisciplinar em Desenvolvimento de Sistemas', 'Integra conhecimentos do curso na criação de um projeto prático de software.'),
-('Versionamento de Código e Sistemas de Mensageria', 'Aborda controle de versões com Git e comunicação entre sistemas por mensageria.'),
-('Lógica de Programação', 'Ensina os fundamentos da programação por meio de algoritmos e raciocínio lógico.'),
-('Processos de Desenvolvimento de Software', 'Aborda metodologias, etapas e boas práticas na criação de sistemas.'),
-('Redes e Segurança', 'Introduz conceitos de redes de computadores, segurança da informação e proteção de sistemas.');
-
 -- Flashcards de Modelagem e Desenvolvimento de Banco de Dados (materia_id = 1)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(1, 'O que significa SQL?', 'Structured Query Language', 'Simple Question Language', 'System Query Logic', 'Standard Quality Language', 'a'),
-(1, 'Qual comando é usado para consultar dados?', 'SELECT', 'INSERT', 'DELETE', 'UPDATE', 'a'),
-(1, 'O que é chave primária?', 'Identificador único de uma tabela', 'Chave que referencia outra tabela', 'Campo opcional', 'Tipo de índice', 'a');
 
--- Flashcards de Inteligência Artificial (materia_id = 2)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(2, 'O que é machine learning?', 'Aprendizado de máquina', 'Banco de dados', 'Linguagem de programação', 'Rede social', 'a'),
-(2, 'Qual é um exemplo de IA?', 'Chatbot', 'Planilha eletrônica', 'Editor de texto', 'Navegador web', 'a'),
-(2, 'O que são redes neurais?', 'Modelo inspirado no cérebro', 'Cabos de internet', 'Tipos de banco de dados', 'Sistemas operacionais', 'a');
+-- Dificuldade 1
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(1, 'O que é um banco de dados?', 'Um conjunto organizado de dados armazenados eletronicamente', 'Um tipo de impressora', 'Um programa de edição de texto', 'Um cabo de rede', 'a', 1),
+(1, 'O que significa a sigla SGBD?', 'Sistema Gerenciador de Banco de Dados', 'Sistema Geral de Backup de Dados', 'Software de Gestão de Downloads', 'Sistema de Gráficos de Banco de Dados', 'a', 1),
+(1, 'Como são chamadas as "linhas" de uma tabela em um banco de dados?', 'Registros (ou tuplas)', 'Colunas', 'Índices', 'Consultas', 'a', 1),
+(1, 'Como são chamadas as "colunas" de uma tabela em um banco de dados?', 'Atributos (ou campos)', 'Registros', 'Chaves', 'Consultas', 'a', 1),
+(1, 'Qual exemplo abaixo é um exemplo de SGBD?', 'MySQL', 'Word', 'Excel Online', 'Photoshop', 'a', 1);
 
--- Flashcards de Programação Back-End (materia_id = 3)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(3, 'O que é uma API?', 'Interface de comunicação entre sistemas', 'Linguagem de programação', 'Banco de dados', 'Servidor de e-mail', 'a'),
-(3, 'Qual método HTTP é usado para criar dados?', 'POST', 'GET', 'DELETE', 'PUT', 'a'),
-(3, 'O que é JSON?', 'Formato de troca de dados', 'Linguagem de programação', 'Sistema operacional', 'Banco de dados', 'a');
+-- Dificuldade 2
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(1, 'O que é uma chave primária (Primary Key)?', 'Um campo que identifica de forma única cada registro da tabela', 'Um campo que pode ter valores repetidos', 'Um campo que armazena senhas', 'Um tipo de gráfico', 'a', 2),
+(1, 'Qual comando SQL é usado para buscar dados em uma tabela?', 'SELECT', 'SEARCH', 'FIND', 'OPEN', 'a', 2),
+(1, 'Qual comando SQL é usado para inserir um novo registro em uma tabela?', 'INSERT INTO', 'ADD INTO', 'PUT INTO', 'NEW INTO', 'a', 2),
+(1, 'Qual comando SQL é usado para criar uma nova tabela?', 'CREATE TABLE', 'NEW TABLE', 'MAKE TABLE', 'BUILD TABLE', 'a', 2),
+(1, 'O que é uma chave estrangeira (Foreign Key)?', 'Um campo que faz referência à chave primária de outra tabela', 'Uma chave usada apenas em bancos internacionais', 'Um campo que nunca pode ser nulo', 'Um tipo de senha do banco de dados', 'a', 2);
 
--- Flashcards de Programação Front-End (materia_id = 4)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(4, 'Qual linguagem define a estrutura de uma página web?', 'HTML', 'CSS', 'JavaScript', 'Python', 'a'),
-(4, 'Qual linguagem é usada para estilizar páginas?', 'CSS', 'HTML', 'SQL', 'Java', 'a'),
-(4, 'Qual linguagem adiciona interatividade?', 'JavaScript', 'CSS', 'HTML', 'C++', 'a');
+-- Dificuldade 3
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(1, 'O que é o Modelo Entidade-Relacionamento (MER)?', 'Uma representação gráfica usada para planejar a estrutura de um banco de dados', 'Um comando SQL específico', 'Um tipo de backup automático', 'Uma linguagem de programação', 'a', 3),
+(1, 'Qual cláusula SQL é usada para filtrar resultados de uma consulta?', 'WHERE', 'FILTER', 'IF', 'WHEN', 'a', 3),
+(1, 'O que faz o comando UPDATE em SQL?', 'Atualiza dados já existentes em uma tabela', 'Cria uma nova tabela', 'Apaga uma tabela inteira', 'Cria um novo banco de dados', 'a', 3),
+(1, 'O que faz o comando DELETE em SQL?', 'Remove registros de uma tabela', 'Remove uma coluna da tabela', 'Cria uma cópia de segurança', 'Renomeia uma tabela', 'a', 3),
+(1, 'O que é normalização de um banco de dados?', 'Um processo para organizar os dados e reduzir redundâncias', 'Um processo para deixar o banco mais lento', 'A criação de senhas mais seguras', 'A instalação de um novo SGBD', 'a', 3);
 
--- Flashcards de Programação Mobile (materia_id = 5)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(5, 'Qual sistema operacional é usado no iPhone?', 'iOS', 'Android', 'Windows', 'Linux', 'a'),
-(5, 'Qual linguagem é usada no Android?', 'Kotlin', 'Swift', 'C#', 'PHP', 'a'),
-(5, 'O que é um aplicativo nativo?', 'Aplicativo desenvolvido para uma plataforma específica', 'Aplicativo que roda no navegador', 'Site responsivo', 'Banco de dados', 'a');
-
--- Flashcards de Projeto Multidisciplinar (materia_id = 6)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(6, 'O que é um MVP?', 'Produto mínimo viável', 'Modelo de banco de dados', 'Método de criptografia', 'Linguagem de programação', 'a'),
-(6, 'Qual é a finalidade de um projeto multidisciplinar?', 'Integrar conhecimentos do curso', 'Avaliar apenas uma matéria', 'Testar hardware', 'Criar planilhas', 'a'),
-(6, 'O que é requisito funcional?', 'O que o sistema deve fazer', 'Como o sistema é instalado', 'Tipo de banco de dados', 'Configuração de rede', 'a');
-
--- Flashcards de Versionamento de Código e Mensageria (materia_id = 7)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(7, 'O que é Git?', 'Sistema de controle de versões', 'Linguagem de programação', 'Servidor web', 'Banco de dados', 'a'),
-(7, 'Qual comando salva mudanças no Git?', 'git commit', 'git push', 'git pull', 'git clone', 'a'),
-(7, 'O que é mensageria?', 'Comunicação entre sistemas', 'Tipo de banco de dados', 'Linguagem de programação', 'Sistema operacional', 'a');
-
--- Flashcards de Lógica de Programação (materia_id = 8)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(8, 'O que é um algoritmo?', 'Sequência de passos para resolver um problema', 'Tipo de dado', 'Linguagem de programação', 'Banco de dados', 'a'),
-(8, 'Qual estrutura repete um bloco de código?', 'Loop', 'Condicional', 'Variável', 'Função', 'a'),
-(8, 'O que é uma variável?', 'Espaço para armazenar dados', 'Tipo de loop', 'Operador lógico', 'Banco de dados', 'a');
-
--- Flashcards de Processos de Desenvolvimento de Software (materia_id = 9)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(9, 'O que é Scrum?', 'Metodologia ágil', 'Linguagem de programação', 'Banco de dados', 'Sistema operacional', 'a'),
-(9, 'O que é uma sprint?', 'Período de trabalho no Scrum', 'Tipo de banco de dados', 'Comando SQL', 'Ferramenta de design', 'a'),
-(9, 'O que é Kanban?', 'Método visual de gestão de tarefas', 'Linguagem de programação', 'Protocolo de rede', 'Tipo de hardware', 'a');
-
--- Flashcards de Redes e Segurança (materia_id = 10)
-INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta) VALUES
-(10, 'O que é um firewall?', 'Barreira de segurança de rede', 'Tipo de vírus', 'Linguagem de programação', 'Servidor web', 'a'),
-(10, 'O que é phishing?', 'Tentativa de obter dados por meio de engano', 'Tipo de criptografia', 'Protocolo de rede', 'Sistema operacional', 'a'),
-(10, 'O que é VPN?', 'Rede privada virtual', 'Vírus de computador', 'Linguagem de programação', 'Banco de dados', 'a');
+-- Dificuldade 4
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(1, 'O que é um JOIN em SQL?', 'Uma operação que combina dados de duas ou mais tabelas relacionadas', 'Um comando para apagar tabelas', 'Um tipo de senha de acesso', 'Uma forma de renomear colunas', 'a', 4),
+(1, 'Na Primeira Forma Normal (1FN), o que deve ser garantido?', 'Que cada campo da tabela contenha apenas um valor (valores atômicos)', 'Que a tabela tenha no mínimo duas chaves primárias', 'Que não existam colunas na tabela', 'Que todos os dados sejam números', 'a', 4),
+(1, 'O que representa um relacionamento "um-para-muitos" (1:N) entre duas entidades?', 'Um registro de uma entidade pode se relacionar com vários registros de outra entidade', 'Um registro de uma entidade só pode se relacionar com outro único registro', 'Nenhum registro pode se relacionar com outro', 'As duas entidades devem ter sempre o mesmo número de registros', 'a', 4),
+(1, 'O que é integridade referencial em um banco de dados?', 'A garantia de que os relacionamentos entre tabelas permaneçam consistentes, sem referências inválidas', 'A criptografia automática dos dados', 'A velocidade de resposta do banco de dados', 'A quantidade máxima de tabelas permitida', 'a', 4),
+(1, 'Em um Diagrama Entidade-Relacionamento, o que representa um losango (diamante)?', 'Um relacionamento entre entidades', 'Uma entidade', 'Um atributo', 'Uma chave primária', 'a', 4);
