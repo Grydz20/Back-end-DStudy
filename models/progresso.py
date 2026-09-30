@@ -1,4 +1,3 @@
-from datetime import datetime
 from database.connection import db
 
 
@@ -16,4 +15,4 @@ class Progresso(db.Model):
     total_erros = db.Column(db.Integer, default=0, nullable=False)
     dominado = db.Column(db.Boolean, default=False, nullable=False)
     ultima_resposta = db.Column(db.String(10), nullable=True)
-    proxima_revisao = db.Column(db.DateTime, nullable=True)
+    flashcards_restantes = db.Column(db.Integer, nullable=False, default=0)
