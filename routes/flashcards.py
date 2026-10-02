@@ -12,7 +12,7 @@ def listar_flashcards_por_materia(materia_id):
     if not usuario_id:
         return jsonify({"erro": "usuario_id é obrigatório."}), 400
 
-    # Busca todos os flashcards da matéria, ordenados por dificuldade
+    # Todos os flashcards da matéria, ordenados por dificuldade
     flashcards = (
         Flashcard.query
         .filter_by(materia_id=materia_id)
@@ -20,18 +20,39 @@ def listar_flashcards_por_materia(materia_id):
         .all()
     )
 
-    # Busca os flashcards que o usuário já dominou
-    dominados = (
+    # Progresso do usuário nessa matéria
+    progressos = (
         Progresso.query
-        .filter_by(usuario_id=usuario_id, dominado=True)
+        .join(Flashcard, Progresso.flashcard_id == Flashcard.id)
+        .filter(
+            Progresso.usuario_id == usuario_id,
+            Flashcard.materia_id == materia_id
+        )
         .all()
     )
-    ids_dominados = [p.flashcard_id for p in dominados]
 
-    # Filtra os flashcards que NÃO estão dominados
-    flashcards_disponiveis = [
-        f for f in flashcards if f.id not in ids_dominados
-    ]
+    # Mapeia: flashcard_id -> progresso
+    progresso_por_flashcard = {p.flashcard_id: p for p in progressos}
+
+    disponiveis = []
+    for f in flashcards:
+        progresso = progresso_por_flashcard.get(f.id)
+
+        # Nunca visto
+        if not progresso:
+            disponiveis.append(f)
+            continue
+
+        # Já dominado: não aparece
+        if progresso.dominado:
+            continue
+
+        # Ainda em espera: não aparece
+        if progresso.flashcards_restantes > 0:
+            continue
+
+        # Pronto para voltar
+        disponiveis.append(f)
 
     resultado = [
         {
@@ -40,7 +61,7 @@ def listar_flashcards_por_materia(materia_id):
             "alternativas": [f.alt_a, f.alt_b, f.alt_c, f.alt_d],
             "dificuldade": f.dificuldade,
         }
-        for f in flashcards_disponiveis
+        for f in disponiveis
     ]
 
     return jsonify(resultado)
