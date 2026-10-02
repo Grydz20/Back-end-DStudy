@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from database.connection import db, init_app
 from models.usuario import Usuario  
 from models.materia import Materia
@@ -12,6 +13,14 @@ from routes.progresso import progresso_bp
 
 # Cria a aplicação Flask
 app = Flask(__name__)
+
+CORS(app, resources={
+    r"/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
 # Conecta o app ao banco de dados
 init_app(app)
 
