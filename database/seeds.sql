@@ -121,3 +121,75 @@ INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, corret
 (3, 'O que é escalabilidade em uma aplicação back-end?', 'A capacidade do sistema de lidar com um aumento de carga ou usuários sem perder desempenho', 'A capacidade de reduzir o tamanho do código-fonte', 'A capacidade de alterar o layout da interface automaticamente', 'A capacidade de traduzir o sistema para vários idiomas', 'a', 4),
 (3, 'O que é injeção de SQL (SQL Injection)?', 'Uma vulnerabilidade onde um invasor insere comandos SQL maliciosos através de campos de entrada mal validados', 'Uma técnica legítima usada para otimizar consultas ao banco de dados', 'Um método de backup automático do banco de dados', 'Um recurso usado para acelerar o carregamento de páginas', 'a', 4),
 (3, 'O que é cache em uma aplicação back-end?', 'Um mecanismo de armazenamento temporário de dados para acelerar o acesso a informações frequentemente solicitadas', 'Um tipo de banco de dados usado exclusivamente para logs de erro', 'Um protocolo usado para autenticação de usuários', 'Um componente responsável por formatar datas na interface', 'a', 4);
+
+-- ============================================
+-- FLASHCARDS - Programação Front-End (materia_id = 4)
+-- ============================================
+
+-- Dificuldade 1
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(4, 'O que é HTML?', 'Uma linguagem de marcação usada para estruturar páginas web', 'Uma linguagem de programação para bancos de dados', 'Um programa de edição de imagens', 'Um sistema operacional', 'a', 1),
+(4, 'O que é CSS?', 'Uma linguagem usada para estilizar páginas web (cores, fontes, layout)', 'Uma linguagem usada para criar bancos de dados', 'Um protocolo de internet', 'Um tipo de servidor', 'a', 1),
+(4, 'O que é JavaScript?', 'Uma linguagem de programação usada para adicionar interatividade às páginas web', 'Uma linguagem usada apenas para estilizar textos', 'Um tipo de banco de dados', 'Um programa de edição de vídeos', 'a', 1),
+(4, 'Qual é a extensão de arquivo usada para páginas HTML?', '.html', '.css', '.doc', '.exe', 'a', 1),
+(4, 'O que é um navegador (browser)?', 'Um programa usado para acessar e exibir páginas da web', 'Um tipo de editor de texto', 'Um dispositivo de armazenamento', 'Um antivírus', 'a', 1);
+
+-- Dificuldade 2
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(4, 'Em HTML, qual tag é usada para criar um link?', '<a>', '<link>', '<href>', '<url>', 'a', 2),
+(4, 'Em HTML, qual tag é usada para exibir uma imagem?', '<img>', '<picture>', '<src>', '<image>', 'a', 2),
+(4, 'Em CSS, qual propriedade é usada para definir a cor do texto?', 'color', 'text-color', 'font-color', 'background', 'a', 2),
+(4, 'Em JavaScript, qual palavra é usada para declarar uma variável?', 'let', 'var2', 'new', 'def', 'a', 2),
+(4, 'Qual é a principal função do JavaScript em uma página web?', 'Adicionar comportamento dinâmico e interatividade', 'Definir apenas a estrutura da página', 'Definir apenas as cores e fontes', 'Armazenar dados em um servidor externo', 'a', 2);
+
+-- Dificuldade 3
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(4, 'O que é responsividade (design responsivo)?', 'A capacidade de uma página se adaptar a diferentes tamanhos de tela', 'A velocidade de carregamento do servidor', 'A quantidade de cores usadas na página', 'Um recurso exclusivo de aplicativos mobile', 'a', 3),
+(4, 'O que representa uma "tag" em HTML?', 'Um elemento usado para marcar e estruturar o conteúdo da página', 'Um comando usado para consultar um banco de dados', 'Um tipo de variável do JavaScript', 'Um arquivo de configuração do servidor', 'a', 3),
+(4, 'O que é um seletor em CSS?', 'Uma forma de indicar quais elementos HTML devem receber determinado estilo', 'Um comando usado para apagar elementos da página', 'Um tipo de variável usada em JavaScript', 'Um protocolo de comunicação com o servidor', 'a', 3),
+(4, 'Em JavaScript, o que é uma função?', 'Um bloco de código reutilizável que executa uma tarefa específica', 'Um tipo de tag HTML', 'Uma propriedade exclusiva do CSS', 'Um arquivo de configuração do navegador', 'a', 3),
+(4, 'O que é o DOM (Document Object Model)?', 'Uma representação em forma de árvore da estrutura da página, manipulável via JavaScript', 'Um tipo de banco de dados usado no back-end', 'Um protocolo de segurança para senhas', 'Um formato de arquivo de imagem', 'a', 3);
+
+-- Dificuldade 4
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(4, 'O que é um framework front-end (como React, Angular ou Vue)?', 'Um conjunto de ferramentas e bibliotecas que facilita a construção de interfaces web', 'Um tipo de servidor de banco de dados', 'Um protocolo usado para enviar e-mails', 'Um sistema operacional voltado para navegadores', 'a', 4),
+(4, 'O que é o "box model" em CSS?', 'O modelo que define como margem, borda, preenchimento e conteúdo de um elemento são calculados', 'Um tipo de banco de dados usado para páginas web', 'Um protocolo de troca de arquivos entre navegadores', 'Uma função usada apenas para validar formulários', 'a', 4),
+(4, 'Em JavaScript, o que faz o método addEventListener?', 'Associa uma ação a um evento, como um clique em um botão', 'Cria uma nova variável no programa', 'Define o estilo de um elemento HTML', 'Cria uma nova página HTML', 'a', 4),
+(4, 'O que são "media queries" em CSS?', 'Regras que permitem aplicar estilos diferentes com base nas características da tela, como largura', 'Um tipo de consulta usada para buscar dados em um banco de dados', 'Um protocolo usado para carregar vídeos automaticamente', 'Uma função JavaScript usada para validar formulários', 'a', 4),
+(4, 'O que é uma requisição assíncrona (fetch/AJAX) em JavaScript?', 'Uma forma de buscar ou enviar dados ao servidor sem recarregar a página inteira', 'Um tipo de animação exclusiva do CSS', 'Um recurso usado apenas para formatar textos', 'Um protocolo usado só para armazenar cookies', 'a', 4);
+
+-- ============================================
+-- FLASHCARDS - Programação Mobile (materia_id = 5)
+-- ============================================
+
+-- Dificuldade 1
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(5, 'O que é desenvolvimento mobile?', 'A criação de aplicativos para dispositivos móveis, como celulares e tablets', 'A criação de sistemas exclusivos para computadores de mesa', 'A manutenção de redes de internet em empresas', 'A instalação de impressoras em uma rede local', 'a', 1),
+(5, 'Qual destes é um sistema operacional mobile?', 'Android', 'MS-DOS', 'Ubuntu Server', 'Windows Server', 'a', 1),
+(5, 'O que é um aplicativo nativo?', 'Um app desenvolvido especificamente para uma plataforma (Android ou iOS) usando suas ferramentas oficiais', 'Um app que funciona apenas quando o celular está conectado ao Wi-Fi', 'Um app criado unicamente para ser acessado pelo navegador', 'Um app que não pode ser atualizado após a instalação', 'a', 1),
+(5, 'Qual linguagem é oficialmente usada para desenvolvimento Android atualmente?', 'Kotlin', 'SQL', 'HTML', 'Assembly', 'a', 1),
+(5, 'Qual linguagem é usada para desenvolvimento nativo em iOS?', 'Swift', 'Visual Basic', 'COBOL', 'MATLAB', 'a', 1);
+
+-- Dificuldade 2
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(5, 'O que é um aplicativo híbrido?', 'Um app criado com uma única base de código que roda em várias plataformas (Android e iOS)', 'Um app que combina funções de câmera e GPS', 'Um app que funciona apenas com dados móveis, sem Wi-Fi', 'Um app que é atualizado automaticamente sem o usuário saber', 'a', 2),
+(5, 'O que é o Flutter?', 'Um framework para criar apps multiplataforma usando a linguagem Dart', 'Um serviço de nuvem para armazenar fotos de aplicativos', 'Um recurso do Android usado para economizar bateria', 'Um aplicativo de design de ícones', 'a', 2),
+(5, 'Qual linguagem é usada no framework Flutter?', 'Dart', 'Kotlin', 'Objective-C', 'TypeScript', 'a', 2),
+(5, 'O que é o Android Studio?', 'O ambiente de desenvolvimento (IDE) oficial para criar apps Android', 'Uma loja de aplicativos alternativa à Play Store', 'Um antivírus voltado para dispositivos Android', 'Um aplicativo de gerenciamento de arquivos do celular', 'a', 2),
+(5, 'O que é o React Native?', 'Um framework que permite criar apps mobile usando JavaScript', 'Um plugin usado apenas para testar a interface de apps', 'Uma versão simplificada do Android Studio', 'Um serviço de hospedagem de aplicativos na nuvem', 'a', 2);
+
+-- Dificuldade 3
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(5, 'O que é uma "Activity" no desenvolvimento Android?', 'Uma tela ou componente da interface com a qual o usuário interage', 'Um processo em segundo plano que monitora a bateria do dispositivo', 'Um arquivo que armazena as configurações de rede do app', 'Um serviço responsável por sincronizar contatos', 'a', 3),
+(5, 'O que é responsividade em um app mobile?', 'A capacidade da interface se adaptar a diferentes tamanhos de tela', 'A rapidez com que o app é baixado da loja', 'O número de permissões que o app solicita ao ser instalado', 'A capacidade do app de funcionar sem internet', 'a', 3),
+(5, 'O que é uma API, no contexto de apps mobile que se conectam à internet?', 'Um conjunto de regras que permite ao app se comunicar com um servidor ou outro sistema', 'Um espaço de armazenamento reservado apenas para o app no celular', 'Um ícone exibido na tela inicial do dispositivo', 'Um sistema que gerencia as permissões de câmera e microfone', 'a', 3),
+(5, 'O que são notificações push?', 'Mensagens enviadas por um servidor que aparecem no dispositivo mesmo com o app fechado', 'Alertas gerados automaticamente quando a bateria do celular está baixa', 'Mensagens trocadas apenas entre dois aplicativos instalados no mesmo celular', 'Lembretes criados manualmente pelo usuário na agenda do sistema', 'a', 3),
+(5, 'O que é armazenamento local em um app mobile?', 'Uma forma de guardar dados diretamente no dispositivo do usuário, sem depender da internet', 'Um espaço de backup disponibilizado gratuitamente pela loja de aplicativos', 'Um serviço que sincroniza dados automaticamente entre vários usuários', 'Um recurso que impede o app de ser desinstalado', 'a', 3);
+
+-- Dificuldade 4
+INSERT INTO flashcards (materia_id, pergunta, alt_a, alt_b, alt_c, alt_d, correta, dificuldade) VALUES
+(5, 'Qual a principal vantagem de usar um framework multiplataforma como Flutter ou React Native?', 'Permite desenvolver um único código-base para rodar em Android e iOS, economizando tempo', 'Garante que o app nunca apresente erros após o lançamento', 'Dispensa totalmente a necessidade de testes antes da publicação', 'Aumenta automaticamente a nota do app na loja de aplicativos', 'a', 4),
+(5, 'O que é o ciclo de vida de uma Activity/tela em um app mobile?', 'A sequência de estados pelos quais uma tela passa, como criada, pausada e destruída', 'O período entre o lançamento do app e sua primeira atualização', 'O tempo que o app leva para ser aprovado na loja de aplicativos', 'A ordem em que as telas aparecem no menu de configurações', 'a', 4),
+(5, 'O que é consumo de API REST em um app mobile?', 'O processo pelo qual o app envia requisições HTTP para buscar ou enviar dados a um servidor', 'O processo de reduzir o tamanho do aplicativo para caber em celulares antigos', 'O processo de verificar se o dispositivo tem espaço de armazenamento suficiente', 'O processo de converter o app para funcionar em diferentes idiomas', 'a', 4),
+(5, 'O que são permissões em um aplicativo mobile?', 'Autorizações que o usuário concede para o app acessar recursos do dispositivo, como câmera ou localização', 'Códigos que liberam funções pagas dentro do aplicativo', 'Configurações que definem o tema claro ou escuro do app', 'Regras que determinam em quais países o app pode ser baixado', 'a', 4),
+(5, 'O que é versionamento de um aplicativo mobile?', 'O controle de diferentes versões do app lançadas ao longo do tempo, geralmente identificadas por números', 'O processo de adaptar o app para diferentes tamanhos de tela', 'A verificação de compatibilidade do app com o modelo do celular', 'O processo de restaurar um app após ele ser desinstalado', 'a', 4);
